@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contacto — Hablemos de tu operación | WizeHub</title>
+<meta name="description" content="Agenda una demo, solicita un plan a medida o conversa con nuestro equipo sobre WizeHub y WizeFlow.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css"></head><body>
+<div id="nav-slot"></div>
+
+<section class="page-hero"><div class="container">
+  <span class="kicker">Contacto</span>
+  <h1>Hablemos de tu <span style="background:var(--wz-gradient);-webkit-background-clip:text;background-clip:text;color:transparent">operación</span></h1>
+  <p class="lead" style="margin:0 auto;max-width:680px">Ya sea para una demo, una cotización o una consulta sobre WizeFlow, nuestro equipo responde en menos de 24 horas hábiles.</p>
+</div></section>
+
+<section><div class="container" style="max-width:720px">
+  <div class="card">
+    <form onsubmit="event.preventDefault();alert('¡Gracias! Te contactaremos pronto.');this.reset();">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px">
+        <div><label style="font-size:.9rem;font-weight:600">Nombre</label><input type="text" required style="width:100%;padding:12px;border:1px solid var(--wz-border);border-radius:8px;margin-top:4px"></div>
+        <div><label style="font-size:.9rem;font-weight:600">Empresa</label><input type="text" required style="width:100%;padding:12px;border:1px solid var(--wz-border);border-radius:8px;margin-top:4px"></div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px">
+        <div><label style="font-size:.9rem;font-weight:600">Email</label><input type="email" required style="width:100%;padding:12px;border:1px solid var(--wz-border);border-radius:8px;margin-top:4px"></div>
+        <div><label style="font-size:.9rem;font-weight:600">Teléfono</label><input type="tel" style="width:100%;padding:12px;border:1px solid var(--wz-border);border-radius:8px;margin-top:4px"></div>
+      </div>
+      <div style="margin-bottom:16px">
+        <label style="font-size:.9rem;font-weight:600">¿En qué te podemos ayudar?</label>
+        <select style="width:100%;padding:12px;border:1px solid var(--wz-border);border-radius:8px;margin-top:4px">
+          <option>Quiero agendar una demo</option>
+          <option>Necesito un plan Enterprise</option>
+          <option>Me interesa WizeFlow (bots a medida)</option>
+          <option>Soy partner / integrador</option>
+          <option>Otro</option>
+        </select>
+      </div>
+      <div style="margin-bottom:16px">
+        <label style="font-size:.9rem;font-weight:600">Cuéntanos más</label>
+        <textarea rows="4" style="width:100%;padding:12px;border:1px solid var(--wz-border);border-radius:8px;margin-top:4px"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Enviar mensaje</button>
+    </form>
+  </div>
+</div></section>
+
+<div id="footer-slot"></div><script src="assets/partials.js"></script></body></html>
