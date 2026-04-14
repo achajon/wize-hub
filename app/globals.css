@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth }
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+  *:focus-visible {
+    @apply outline-2 outline-offset-2 outline-wz-accent rounded-md;
+  }
+}
+
+@layer components {
+  .wz-gradient { background: linear-gradient(135deg, #4F46E5 0%, #06B6D4 100%); }
+  .wz-gradient-dark { background: linear-gradient(135deg, #0B1020 0%, #1E1B4B 60%, #0E7490 100%); }
+  .wz-text-gradient {
+    background: linear-gradient(135deg, #4F46E5 0%, #06B6D4 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
