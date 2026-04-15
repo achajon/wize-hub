@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { useState } from 'react'
 import { useTheme } from './ThemeProvider'
-import { Sun, Moon } from 'lucide-react'
+import { Sun, Moon, Menu, X } from 'lucide-react'
 
 const productLinks = [
   { href: '/dashboard', label: 'Dashboard Colaborativo', desc: 'Bandeja unificada para equipos' },
@@ -80,24 +80,53 @@ export default function Nav() {
             <button onClick={toggle} className="w-9 h-9 rounded-lg border border-slate-200 dark:border-slate-600 flex items-center justify-center text-sm" aria-label="Cambiar tema">
               {theme === 'dark' ? <Sun size={16} /> : <Moon size={16} />}
             </button>
-            <button onClick={() => setOpen(!open)} className="w-9 h-9 rounded-lg border border-slate-200 dark:border-slate-600 flex items-center justify-center text-lg" aria-label="Menú" aria-expanded={open}>
-              {open ? '✕' : '☰'}
+            <button onClick={() => setOpen(!open)} className="w-9 h-9 rounded-lg border border-slate-200 dark:border-slate-600 flex items-center justify-center" aria-label="Menú" aria-expanded={open}>
+              {open ? <X size={18} /> : <Menu size={18} />}
             </button>
           </div>
         </div>
 
         {/* Mobile panel */}
         {open && (
-          <div className="lg:hidden fixed inset-x-0 top-[72px] bottom-0 bg-white dark:bg-wz-bg2 z-40 overflow-auto p-6 border-t border-slate-200 dark:border-slate-700">
-            <p className="text-xs font-semibold tracking-widest uppercase text-slate-400 mb-2">Producto</p>
-            {productLinks.map(l => <Link key={l.href} href={l.href} className="py-3 border-b border-slate-100 dark:border-slate-700 font-semibold text-slate-800 dark:text-slate-100">{l.label}</Link>)}
-            <p className="text-xs font-semibold tracking-widest uppercase text-slate-400 mt-5 mb-2">Canales</p>
-            {channelLinks.map(l => <Link key={l.href} href={l.href} className="py-3 border-b border-slate-100 dark:border-slate-700 font-semibold text-slate-800 dark:text-slate-100">{l.label}</Link>)}
-            <p className="text-xs font-semibold tracking-widest uppercase text-slate-400 mt-5 mb-2">Empresa</p>
-            <Link href="/pricing" onClick={() => setOpen(false)} className="block py-3 border-b border-slate-100 dark:border-slate-700 font-semibold text-slate-800 dark:text-slate-100">Precios</Link>
-            <Link href="/about" onClick={() => setOpen(false)} className="block py-3 border-b border-slate-100 dark:border-slate-700 font-semibold text-slate-800 dark:text-slate-100">Sobre nosotros</Link>
-            <Link href="/contact" onClick={() => setOpen(false)} className="block py-3 border-b border-slate-100 dark:border-slate-700 font-semibold text-slate-800 dark:text-slate-100">Contacto</Link>
-            <Link href="/pricing" onClick={() => setOpen(false)} className="block mt-5 py-3 text-center rounded-xl font-semibold wz-gradient text-white">Prueba gratis</Link>
+          <div className="lg:hidden fixed inset-x-0 top-[72px] bottom-0 bg-white dark:bg-wz-bg2 z-50 overflow-auto border-t border-slate-200 dark:border-slate-700">
+            <div className="p-6 space-y-6">
+              <div>
+                <p className="text-xs font-semibold tracking-widest uppercase text-slate-400 dark:text-slate-500 mb-3">Producto</p>
+                <div className="space-y-1">
+                  {productLinks.map(l => (
+                    <Link key={l.href} href={l.href} onClick={() => setOpen(false)} className="flex items-center gap-2 p-2 rounded-lg text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 transition">
+                      <span className="font-medium text-sm">{l.label}</span>
+                      <span className="text-xs text-slate-400 dark:text-slate-500 hidden sm:inline">— {l.desc}</span>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <p className="text-xs font-semibold tracking-widest uppercase text-slate-400 dark:text-slate-500 mb-3">Canales</p>
+                <div className="space-y-1">
+                  {channelLinks.map(l => (
+                    <Link key={l.href} href={l.href} onClick={() => setOpen(false)} className="flex items-center gap-2 p-2 rounded-lg text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 transition">
+                      <span className="font-medium text-sm">{l.label}</span>
+                      <span className="text-xs text-slate-400 dark:text-slate-500 hidden sm:inline">— {l.desc}</span>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <p className="text-xs font-semibold tracking-widest uppercase text-slate-400 dark:text-slate-500 mb-3">Empresa</p>
+                <div className="space-y-1">
+                  <Link href="/pricing" onClick={() => setOpen(false)} className="block p-2 rounded-lg font-medium text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 transition">Precios</Link>
+                  <Link href="/contact" onClick={() => setOpen(false)} className="block p-2 rounded-lg font-medium text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 transition">Contacto</Link>
+                </div>
+              </div>
+
+              <div className="pt-2 space-y-3">
+                <Link href="/contact" onClick={() => setOpen(false)} className="block w-full py-2.5 text-center rounded-xl text-sm font-semibold border border-slate-200 dark:border-slate-600 text-slate-700 dark:text-slate-200 hover:border-wz-primary hover:text-wz-primary transition">Iniciar sesión</Link>
+                <Link href="/pricing" onClick={() => setOpen(false)} className="block w-full py-2.5 text-center rounded-xl text-sm font-semibold wz-gradient text-white shadow-lg shadow-indigo-500/30">Prueba gratis</Link>
+              </div>
+            </div>
           </div>
         )}
       </nav>
