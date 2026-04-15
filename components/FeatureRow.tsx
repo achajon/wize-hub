@@ -6,14 +6,16 @@ interface Props {
   kicker: string
   title: string
   description: string
-  mockText: string
+  mockText?: string
+  mockImage?: string
+  mockImageAlt?: string
   reverse?: boolean
   ctaLabel?: string
   ctaHref?: string
   bullets?: string[]
 }
 
-export default function FeatureRow({ kicker, title, description, mockText, reverse, ctaLabel, ctaHref, bullets }: Props) {
+export default function FeatureRow({ kicker, title, description, mockText, mockImage, mockImageAlt, reverse, ctaLabel, ctaHref, bullets }: Props) {
   return (
     <ScrollReveal>
       <div className={`grid lg:grid-cols-2 gap-14 items-center py-12 ${reverse ? 'lg:direction-rtl' : ''}`}>
@@ -33,9 +35,13 @@ export default function FeatureRow({ kicker, title, description, mockText, rever
           )}
         </div>
         <div className={reverse ? 'lg:order-1' : ''}>
-          <div className="p-1 rounded-2xl wz-gradient shadow-xl">
-            <div className="bg-wz-bg rounded-xl aspect-[4/3] flex items-center justify-center text-slate-400 text-sm p-5 text-center">
-              {mockText}
+          <div className="p-0.5 rounded-2xl wz-gradient shadow-xl">
+            <div className="bg-wz-bg rounded-xl aspect-[4/3] flex items-center justify-center text-slate-400 text-sm p-2 text-center overflow-hidden">
+              {mockImage ? (
+                <img src={mockImage} alt={mockImageAlt || ''} className="w-full h-full object-contain" />
+              ) : (
+                mockText
+              )}
             </div>
           </div>
         </div>

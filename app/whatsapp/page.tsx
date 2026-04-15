@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata } from "next";
 import {
   ShoppingBag,
   Building2,
@@ -6,16 +6,16 @@ import {
   Stethoscope,
   Truck,
   Plane,
-} from 'lucide-react'
-import PageHero from '@/components/PageHero'
-import FeatureRow from '@/components/FeatureRow'
-import Card from '@/components/Card'
-import SectionHead from '@/components/SectionHead'
-import CtaBand from '@/components/CtaBand'
+} from "lucide-react";
+import PageHero from "@/components/PageHero";
+import FeatureRow from "@/components/FeatureRow";
+import Card from "@/components/Card";
+import SectionHead from "@/components/SectionHead";
+import CtaBand from "@/components/CtaBand";
 
 export const metadata: Metadata = {
-  title: 'WhatsApp Business en WizeHub',
-}
+  title: "WhatsApp Business en WizeHub",
+};
 
 export default function WhatsAppPage() {
   return (
@@ -25,12 +25,13 @@ export default function WhatsAppPage() {
         kicker="Canal · WhatsApp"
         title={
           <>
-            Domina <span className="wz-text-gradient">WhatsApp</span> como nunca antes
+            Domina <span className="wz-text-gradient">WhatsApp</span> como nunca
+            antes
           </>
         }
         description="Integra la API oficial de WhatsApp Business en WizeHub. Gestiona múltiples números, envía plantillas aprobadas, recibe mensajes y automatiza con WizeFlow. Sin limitaciones de desarrollo, sin pasos complicados."
-        primaryCta={{ label: 'Empezar prueba gratis', href: '/pricing' }}
-        secondaryCta={{ label: 'Solicitar demo', href: '/contact' }}
+        primaryCta={{ label: "Empezar prueba gratis", href: "/pricing" }}
+        secondaryCta={{ label: "Solicitar demo", href: "/contact" }}
       />
 
       {/* Feature Rows */}
@@ -39,13 +40,14 @@ export default function WhatsAppPage() {
           <FeatureRow
             kicker="API Oficial"
             title="Acceso directo a la API de WhatsApp Business"
-            description="Conecta tu número verificado, envía plantillas HSM precargadas, recibe mensajes instantáneamente. WizeHub maneja toda la complejidad técnica para que tú solo configures y lanzas."
-            mockText="[Captura: panel de WizeHub con conversaciones de WhatsApp, plantillas disponibles y opciones de envío]"
+            description="Conecta tu número verificado, envía plantillas HSM precargadas, recibe mensajes instantáneamente. WizeHub maneja toda la complejidad técnica para que tú solo configures y lanzes."
+            mockImage="/images/whatsapp-channel-configuration-1.png"
+            mockImageAlt="Panel de WizeHub con conversaciones de WhatsApp, plantillas disponibles y opciones de envío"
             bullets={[
-              'Verificación de marca con Meta',
-              'Plantillas HSM ilimitadas',
-              'Soporte multiagente',
-              'Archivos multimedia: imágenes, vídeos, documentos',
+              "Verificación de marca con Meta",
+              "Plantillas HSM ilimitadas",
+              "Soporte multiagente",
+              "Archivos multimedia: imágenes, vídeos, documentos",
             ]}
           />
 
@@ -54,14 +56,16 @@ export default function WhatsAppPage() {
             kicker="Multiagente"
             title="Múltiples agentes, un solo número"
             description="Distribuye conversaciones de WhatsApp entre tu equipo sin crear números fantásmas. Asigna automáticamente por área, cliente o round-robin. Todos ven el historial completo."
-            mockText="[Captura: panel de asignación de conversaciones con agentes, prioridades y SLA]"
+            mockImage="/images/multichannel-people.png"
+            mockImageAlt="Panel de asignación de conversaciones con agentes, prioridades y SLA"
           />
 
           <FeatureRow
             kicker="Plantillas y Campañas"
             title="Automatiza mensajes sin marketing fatiga"
             description="Diseña plantillas aprobadas por Meta. Envía notificaciones de pedidos, confirmaciones de citas, actualizaciones de estado y recordatorios. Todo personalizado y en tiempo real."
-            mockText="[Captura: constructor de plantillas HSM con variables y vista previa]"
+            mockImage="/images/templates-hsm-variables-meta.png"
+            mockImageAlt="Constructor de plantillas HSM con variables y vista previa"
           />
 
           <FeatureRow
@@ -69,7 +73,8 @@ export default function WhatsAppPage() {
             kicker="WizeFlow + WhatsApp"
             title="Bots inteligentes que venden y resuelven"
             description="Integra WizeFlow para automatización conversacional. Bots que califican leads, rastrean pedidos, resuelven FAQs y escalan a humanos en segundos. Entrenados con tu negocio."
-            mockText="[Captura: flujo de bot en WhatsApp resolviendo pedido, luego escalando a agente]"
+            mockImage="/images/bot-in-whatsapp.png"
+            mockImageAlt="Flujo de bot en WhatsApp resolviendo pedido, luego escalando a agente"
             ctaLabel="Conocer WizeFlow →"
             ctaHref="/wizeflow"
           />
@@ -134,5 +139,5 @@ export default function WhatsAppPage() {
         secondaryHref="/contact"
       />
     </>
-  )
+  );
 }
