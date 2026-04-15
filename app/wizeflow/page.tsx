@@ -1,4 +1,12 @@
 import type { Metadata } from 'next'
+import {
+  Bot,
+  Target,
+  PackageSearch,
+  LifeBuoy,
+  Calendar,
+  ClipboardList,
+} from 'lucide-react'
 import PageHero from '@/components/PageHero'
 import FeatureRow from '@/components/FeatureRow'
 import Card from '@/components/Card'
@@ -69,37 +77,37 @@ export default function WizeFlowPage() {
           />
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             <Card
-              icon="🤖"
+              icon={Bot}
               title="Asistente de Ventas"
               description="Consulta catálogo, responde preguntas sobre productos, sugiere recomendaciones. Califica en tiempo real y escala a agente de ventas."
               delay={0}
             />
             <Card
-              icon="🎯"
+              icon={Target}
               title="Calificación de Leads"
               description="Recolecta información clave del prospecto automáticamente. Califica por presupuesto, industria y urgencia. Solo agentes ven leads calificados."
               delay={0.05}
             />
             <Card
-              icon="📦"
+              icon={PackageSearch}
               title="Rastreo de Pedidos"
               description="Cliente pregunta 'dónde está mi orden'. Bot consulta tu ERP y responde en segundos. Sin que un agente tenga que buscar nada."
               delay={0.1}
             />
             <Card
-              icon="🆘"
+              icon={LifeBuoy}
               title="Soporte Nivel 1"
               description="Responde FAQs, resetea contraseñas, resuelve problemas comunes. Escala tickets complejos a especialistas con contexto completo."
               delay={0.15}
             />
             <Card
-              icon="📅"
+              icon={Calendar}
               title="Agenda de Citas"
               description="Cliente elige fecha y hora desde el chat. Bot consulta tu calendario, confirma y envía recordatorios. Sin idas y vueltas por email."
               delay={0.2}
             />
             <Card
-              icon="📝"
+              icon={ClipboardList}
               title="Formularios Conversacionales"
               description="Reemplaza formularios aburridos con conversaciones. Bot pregunta un campo a la vez, valida en tiempo real, no deja espacios vacíos."
               delay={0.25}

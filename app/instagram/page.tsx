@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { Zap, User, BarChart3 } from 'lucide-react'
 import PageHero from '@/components/PageHero'
 import FeatureRow from '@/components/FeatureRow'
 import Card from '@/components/Card'
@@ -68,7 +69,7 @@ export default function InstagramPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
             <ScrollReveal>
               <Card
-                icon="⚡"
+                icon={Zap}
                 title="Auto-respuestas"
                 description="Responde automáticamente preguntas frecuentes. Ofrece información de contacto o ubicación al instante."
                 delay={0}
@@ -76,7 +77,7 @@ export default function InstagramPage() {
             </ScrollReveal>
             <ScrollReveal>
               <Card
-                icon="👤"
+                icon={User}
                 title="Captura de Leads"
                 description="Convierte visitantes en contactos. Recopila emails y teléfonos desde Instagram sin salir de WizeHub."
                 delay={0.1}
@@ -84,7 +85,7 @@ export default function InstagramPage() {
             </ScrollReveal>
             <ScrollReveal>
               <Card
-                icon="📊"
+                icon={BarChart3}
                 title="Métricas"
                 description="Mide tiempo de respuesta, volumen de mensajes y engagement. Optimiza tu estrategia con datos reales."
                 delay={0.2}

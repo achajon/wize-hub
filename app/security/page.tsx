@@ -1,4 +1,12 @@
 import type { Metadata } from 'next'
+import {
+  Lock,
+  Key,
+  Shield,
+  ClipboardList,
+  Globe,
+  CheckCircle,
+} from 'lucide-react'
 import PageHero from '@/components/PageHero'
 import Card from '@/components/Card'
 import SectionHead from '@/components/SectionHead'
@@ -32,7 +40,7 @@ export default function SecurityPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
             <ScrollReveal>
               <Card
-                icon="🔒"
+                icon={Lock}
                 title="Cifrado AES-256"
                 description="Todos los datos en reposo están cifrados con AES-256. Los datos en tránsito usan TLS 1.3."
                 delay={0}
@@ -40,7 +48,7 @@ export default function SecurityPage() {
             </ScrollReveal>
             <ScrollReveal>
               <Card
-                icon="🔑"
+                icon={Key}
                 title="SSO y SAML"
                 description="Integración con tu proveedor de identidad. Azure AD, Okta, Google Workspace. Un login, multiples apps."
                 delay={0.1}
@@ -48,7 +56,7 @@ export default function SecurityPage() {
             </ScrollReveal>
             <ScrollReveal>
               <Card
-                icon="🛡️"
+                icon={Shield}
                 title="Roles Granulares"
                 description="Define permisos exactos para cada agente. Admin, Agente, Supervisor, Custom. Control total."
                 delay={0.2}
@@ -56,7 +64,7 @@ export default function SecurityPage() {
             </ScrollReveal>
             <ScrollReveal>
               <Card
-                icon="📋"
+                icon={ClipboardList}
                 title="Auditoría Completa"
                 description="Registro de cada acción: logins, cambios de datos, cambios de permisos. Histórico de 2+ años."
                 delay={0.3}
@@ -64,7 +72,7 @@ export default function SecurityPage() {
             </ScrollReveal>
             <ScrollReveal>
               <Card
-                icon="🌍"
+                icon={Globe}
                 title="Residencia de Datos"
                 description="Almacenamiento en tu región: EU, US, APAC. Cumple GDPR, CCPA y normativas locales."
                 delay={0.4}
@@ -72,7 +80,7 @@ export default function SecurityPage() {
             </ScrollReveal>
             <ScrollReveal>
               <Card
-                icon="✅"
+                icon={CheckCircle}
                 title="Cumplimiento Normativo"
                 description="SOC 2 Type II, ISO 27001, GDPR, HIPAA. Certificaciones auditadas regularmente."
                 delay={0.5}

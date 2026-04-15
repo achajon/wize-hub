@@ -1,4 +1,22 @@
 import Link from 'next/link'
+import {
+  MessageCircle,
+  Globe,
+  Mail,
+  Camera,
+  MessageSquare,
+  Smartphone,
+  Inbox,
+  Users,
+  Zap,
+  Bot,
+  BarChart3,
+  Link2,
+  ShieldCheck,
+  Languages,
+  Target,
+  ShoppingBag,
+} from 'lucide-react'
 import Kicker from '@/components/Kicker'
 import ScrollReveal from '@/components/ScrollReveal'
 import Card from '@/components/Card'
@@ -7,24 +25,24 @@ import FeatureRow from '@/components/FeatureRow'
 import CtaBand from '@/components/CtaBand'
 
 const channels = [
-  { href: '/whatsapp', icon: '💬', label: 'WhatsApp' },
-  { href: '/livechat', icon: '🌐', label: 'Live Chat' },
-  { href: '/email-channel', icon: '✉️', label: 'Email' },
-  { href: '/instagram', icon: '📸', label: 'Instagram' },
-  { href: '/facebook', icon: '📨', label: 'Messenger' },
-  { href: '/sms', icon: '📱', label: 'SMS' },
+  { href: '/whatsapp', icon: MessageCircle, label: 'WhatsApp' },
+  { href: '/livechat', icon: Globe, label: 'Live Chat' },
+  { href: '/email-channel', icon: Mail, label: 'Email' },
+  { href: '/instagram', icon: Camera, label: 'Instagram' },
+  { href: '/facebook', icon: MessageSquare, label: 'Messenger' },
+  { href: '/sms', icon: Smartphone, label: 'SMS' },
 ]
 
 const features = [
-  { icon: '📥', title: 'Bandeja unificada', desc: 'Todas las conversaciones de todos los canales en una sola vista, con filtros, etiquetas y asignaciones.' },
-  { icon: '👥', title: 'Colaboración en equipo', desc: 'Notas privadas, menciones @, asignaciones y equipos para resolver casos sin duplicar esfuerzos.' },
-  { icon: '⚡', title: 'Automatizaciones', desc: 'Reglas, macros y respuestas predefinidas para enrutar, etiquetar y responder en segundos.' },
-  { icon: '🤖', title: 'WizeFlow + IA', desc: 'Bots personalizados y flujos inteligentes diseñados a medida por el equipo de Wize Devs.' },
-  { icon: '📊', title: 'Reportes en tiempo real', desc: 'Métricas de CSAT, tiempos de respuesta, volumen por canal y productividad por agente.' },
-  { icon: '🔗', title: 'Integraciones', desc: 'Conecta tu CRM, eCommerce, tickets y más. Sincroniza datos sin fricciones.' },
-  { icon: '📱', title: 'Apps móviles', desc: 'Responde desde cualquier lugar con nuestras aplicaciones nativas para iOS y Android.' },
-  { icon: '🛡️', title: 'Seguridad empresarial', desc: 'Cifrado en tránsito y en reposo, SSO, roles granulares y auditoría completa.' },
-  { icon: '🌎', title: 'Multi-idioma', desc: 'Interfaz y contenidos en múltiples idiomas para equipos globales y clientes internacionales.' },
+  { icon: Inbox, title: 'Bandeja unificada', desc: 'Todas las conversaciones de todos los canales en una sola vista, con filtros, etiquetas y asignaciones.' },
+  { icon: Users, title: 'Colaboración en equipo', desc: 'Notas privadas, menciones @, asignaciones y equipos para resolver casos sin duplicar esfuerzos.' },
+  { icon: Zap, title: 'Automatizaciones', desc: 'Reglas, macros y respuestas predefinidas para enrutar, etiquetar y responder en segundos.' },
+  { icon: Bot, title: 'WizeFlow + IA', desc: 'Bots personalizados y flujos inteligentes diseñados a medida por el equipo de Wize Devs.' },
+  { icon: BarChart3, title: 'Reportes en tiempo real', desc: 'Métricas de CSAT, tiempos de respuesta, volumen por canal y productividad por agente.' },
+  { icon: Link2, title: 'Integraciones', desc: 'Conecta tu CRM, eCommerce, tickets y más. Sincroniza datos sin fricciones.' },
+  { icon: Smartphone, title: 'Apps móviles', desc: 'Responde desde cualquier lugar con nuestras aplicaciones nativas para iOS y Android.' },
+  { icon: ShieldCheck, title: 'Seguridad empresarial', desc: 'Cifrado en tránsito y en reposo, SSO, roles granulares y auditoría completa.' },
+  { icon: Languages, title: 'Multi-idioma', desc: 'Interfaz y contenidos en múltiples idiomas para equipos globales y clientes internacionales.' },
 ]
 
 const faqs = [
@@ -101,12 +119,17 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-6">
           <SectionHead kicker="Omnicanal real" title="Conecta todos los canales donde tus clientes te buscan" description="Una sola bandeja para WhatsApp, Live Chat, Email, redes sociales y canales personalizados. Sin cambiar de pestaña, sin perder contexto." />
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
-            {channels.map(c => (
-              <Link key={c.href} href={c.href} className="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl p-5 text-center hover:-translate-y-1 hover:shadow-lg transition-all">
-                <div className="w-10 h-10 mx-auto mb-2 rounded-xl bg-slate-50 dark:bg-slate-700 flex items-center justify-center text-2xl">{c.icon}</div>
-                <div className="font-semibold text-sm text-slate-800 dark:text-slate-100">{c.label}</div>
-              </Link>
-            ))}
+            {channels.map(c => {
+              const Icon = c.icon
+              return (
+                <Link key={c.href} href={c.href} className="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl p-5 text-center hover:-translate-y-1 hover:shadow-lg transition-all">
+                  <div className="w-10 h-10 mx-auto mb-2 rounded-xl bg-slate-50 dark:bg-slate-700 flex items-center justify-center">
+                    <Icon size={20} strokeWidth={1.5} className="text-indigo-600 dark:text-indigo-400" />
+                  </div>
+                  <div className="font-semibold text-sm text-slate-800 dark:text-slate-100">{c.label}</div>
+                </Link>
+              )
+            })}
           </div>
         </div>
       </section>
@@ -141,8 +164,8 @@ export default function HomePage() {
               <Link href="/wizeflow" className="inline-flex mt-5 px-5 py-2.5 rounded-xl text-sm font-semibold bg-white text-indigo-700 hover:bg-indigo-50 transition">Descubrir WizeFlow →</Link>
             </div>
             <div className="bg-white/10 rounded-2xl p-5 space-y-3">
-              {[{ icon: '🤖', t: 'Bot de ventas', d: 'Califica leads y agenda demos' }, { icon: '🎯', t: 'Soporte nivel 1', d: 'Resuelve FAQs y crea tickets' }, { icon: '🛒', t: 'eCommerce', d: 'Rastreo de pedidos y upsell' }].map(i => (
-                <div key={i.t} className="bg-white/15 rounded-xl p-3"><span className="mr-2">{i.icon}</span><strong>{i.t}</strong><br /><small className="text-indigo-100">{i.d}</small></div>
+              {[{ icon: Bot, t: 'Bot de ventas', d: 'Califica leads y agenda demos' }, { icon: Target, t: 'Soporte nivel 1', d: 'Resuelve FAQs y crea tickets' }, { icon: ShoppingBag, t: 'eCommerce', d: 'Rastreo de pedidos y upsell' }].map(i => (
+                <div key={i.t} className="bg-white/15 rounded-xl p-3"><span className="mr-2"><i.icon size={16} strokeWidth={1.5} className="text-indigo-200 inline-block" /></span><strong>{i.t}</strong><br /><small className="text-indigo-100">{i.d}</small></div>
               ))}
             </div>
           </div>

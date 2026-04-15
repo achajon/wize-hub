@@ -1,4 +1,12 @@
 import type { Metadata } from 'next'
+import {
+  ShoppingBag,
+  Building2,
+  BookOpen,
+  Stethoscope,
+  Truck,
+  Plane,
+} from 'lucide-react'
 import PageHero from '@/components/PageHero'
 import FeatureRow from '@/components/FeatureRow'
 import Card from '@/components/Card'
@@ -78,37 +86,37 @@ export default function WhatsAppPage() {
           />
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             <Card
-              icon="🛍️"
+              icon={ShoppingBag}
               title="eCommerce"
               description="Rastreo de pedidos, recuperación de carritos, notificaciones de envío, y atención de devoluciones todo en WhatsApp."
               delay={0}
             />
             <Card
-              icon="🏦"
+              icon={Building2}
               title="Servicios Financieros"
               description="Consultas de cuenta, solicitud de crédito, notificaciones de movimiento y asesoría personalizada sin abandonar WhatsApp."
               delay={0.05}
             />
             <Card
-              icon="📚"
+              icon={BookOpen}
               title="Educación"
               description="Notificaciones de calificaciones, recordatorios de clase, consultas a docentes y soporte administrativo en tiempo real."
               delay={0.1}
             />
             <Card
-              icon="⚕️"
+              icon={Stethoscope}
               title="Salud"
               description="Recordatorios de citas, resultados de exámenes, teleconsultas y prescripciones electrónicas directamente en WhatsApp."
               delay={0.15}
             />
             <Card
-              icon="🚚"
+              icon={Truck}
               title="Logística"
               description="Actualizaciones de entrega, confirmación de recepción, cambios de dirección y gestión de incidencias desde el mismo canal."
               delay={0.2}
             />
             <Card
-              icon="✈️"
+              icon={Plane}
               title="Turismo"
               description="Confirmación de reservas, cambios de vuelos, itinerarios, atención de emergencias y asistencia en viajes."
               delay={0.25}

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { Target, Rocket, Heart } from 'lucide-react'
 import PageHero from '@/components/PageHero'
 import Card from '@/components/Card'
 import SectionHead from '@/components/SectionHead'
@@ -32,7 +33,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
             <ScrollReveal>
               <Card
-                icon="🎯"
+                icon={Target}
                 title="Misión"
                 description="Empoderar equipos de atención al cliente con herramientas modernas, intuitivas y accesibles. Sin complejidad innecesaria."
                 delay={0}
@@ -40,7 +41,7 @@ export default function AboutPage() {
             </ScrollReveal>
             <ScrollReveal>
               <Card
-                icon="🚀"
+                icon={Rocket}
                 title="Visión"
                 description="Ser la plataforma de comunicación preferida para empresas que valoran a sus clientes. En cualquier mercado."
                 delay={0.1}
@@ -48,7 +49,7 @@ export default function AboutPage() {
             </ScrollReveal>
             <ScrollReveal>
               <Card
-                icon="❤️"
+                icon={Heart}
                 title="Valores"
                 description="Simplicidad, transparencia, excelencia. Escuchamos a nuestros usuarios. Hacemos lo correcto siempre."
                 delay={0.2}

@@ -1,4 +1,13 @@
 import type { Metadata } from 'next'
+import {
+  ShoppingBag,
+  LineChart,
+  Cloud,
+  Headphones,
+  Calendar,
+  CreditCard,
+  Zap,
+} from 'lucide-react'
 import PageHero from '@/components/PageHero'
 import FeatureRow from '@/components/FeatureRow'
 import Card from '@/components/Card'
@@ -51,7 +60,7 @@ export default function IntegrationsPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
             <ScrollReveal>
               <Card
-                icon="🛍️"
+                icon={ShoppingBag}
                 title="Shopify"
                 description="Sincroniza órdenes, clientes y productos. Consulta historial de compras en conversaciones."
                 delay={0}
@@ -59,7 +68,7 @@ export default function IntegrationsPage() {
             </ScrollReveal>
             <ScrollReveal>
               <Card
-                icon="🛒"
+                icon={ShoppingBag}
                 title="WooCommerce"
                 description="Para tiendas WordPress. Mismo poder que Shopify. Acceso a datos de órdenes y clientes."
                 delay={0.1}
@@ -67,7 +76,7 @@ export default function IntegrationsPage() {
             </ScrollReveal>
             <ScrollReveal>
               <Card
-                icon="📈"
+                icon={LineChart}
                 title="HubSpot"
                 description="Sincroniza contactos, deals y tickets. Los datos de HubSpot fluyen a WizeHub en tiempo real."
                 delay={0.2}
@@ -75,7 +84,7 @@ export default function IntegrationsPage() {
             </ScrollReveal>
             <ScrollReveal>
               <Card
-                icon="☁️"
+                icon={Cloud}
                 title="Salesforce"
                 description="Conecta con Salesforce Cloud. Accede a cuentas, contactos y oportunidades desde WizeHub."
                 delay={0.3}
@@ -83,7 +92,7 @@ export default function IntegrationsPage() {
             </ScrollReveal>
             <ScrollReveal>
               <Card
-                icon="🎧"
+                icon={Headphones}
                 title="Zendesk"
                 description="Para equipos de soporte. Sincroniza tickets, usuarios y comentarios privados."
                 delay={0.4}
@@ -91,7 +100,7 @@ export default function IntegrationsPage() {
             </ScrollReveal>
             <ScrollReveal>
               <Card
-                icon="📅"
+                icon={Calendar}
                 title="Google Calendar"
                 description="Ve el calendario del agente en WizeHub. Programa citas directamente desde conversaciones."
                 delay={0.5}
@@ -99,7 +108,7 @@ export default function IntegrationsPage() {
             </ScrollReveal>
             <ScrollReveal>
               <Card
-                icon="💳"
+                icon={CreditCard}
                 title="Stripe"
                 description="Información de pagos en contexto. Ver suscripciones y facturación sin salir de WizeHub."
                 delay={0.6}
@@ -107,7 +116,7 @@ export default function IntegrationsPage() {
             </ScrollReveal>
             <ScrollReveal>
               <Card
-                icon="⚡"
+                icon={Zap}
                 title="Zapier"
                 description="Conecta con miles de apps. Si Zapier lo soporta, WizeHub lo hace también."
                 delay={0.7}

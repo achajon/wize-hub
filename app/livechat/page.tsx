@@ -1,4 +1,12 @@
 import type { Metadata } from 'next'
+import {
+  Files,
+  Target,
+  LineChart,
+  ShieldCheck,
+  Zap,
+  MonitorSmartphone,
+} from 'lucide-react'
 import PageHero from '@/components/PageHero'
 import FeatureRow from '@/components/FeatureRow'
 import Card from '@/components/Card'
@@ -78,37 +86,37 @@ export default function LiveChatPage() {
           />
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             <Card
-              icon="📎"
+              icon={Files}
               title="Archivos Multimedia"
               description="Comparte imágenes, PDFs, vídeos y documentos directamente en el widget. Cliente descarga con un clic."
               delay={0}
             />
             <Card
-              icon="🎯"
+              icon={Target}
               title="Segmentación"
               description="Segmenta visitantes por fuente, comportamiento, ubicación y más. Ofrece experiencias personalizadas según segmento."
               delay={0.05}
             />
             <Card
-              icon="📈"
+              icon={LineChart}
               title="Métricas de Conversión"
               description="Mide tasa de conversión de chat, tiempo de respuesta, resolución en primer contacto, y ROI por widget."
               delay={0.1}
             />
             <Card
-              icon="🔒"
+              icon={ShieldCheck}
               title="Privacidad"
               description="Cumple RGPD, CCPA y leyes locales. Encriptación en tránsito, consentimiento explícito, y sin rastreo de terceros."
               delay={0.15}
             />
             <Card
-              icon="⚡"
+              icon={Zap}
               title="Fácil de Instalar"
               description="Copia y pega un snippet. Sin cambios en tu stack, sin dependencias pesadas, sin tiempo de desarrollo."
               delay={0.2}
             />
             <Card
-              icon="📱"
+              icon={MonitorSmartphone}
               title="100% Responsivo"
               description="Perfecto en desktop, tablet y móvil. El widget se adapta a cualquier pantalla automáticamente."
               delay={0.25}

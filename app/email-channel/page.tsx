@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { Inbox, Clock, Link2 } from 'lucide-react'
 import PageHero from '@/components/PageHero'
 import FeatureRow from '@/components/FeatureRow'
 import Card from '@/components/Card'
@@ -84,7 +85,7 @@ export default function EmailChannelPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
             <ScrollReveal>
               <Card
-                icon="📥"
+                icon={Inbox}
                 title="Múltiples Buzones"
                 description="Conecta todos tus emails en una sola plataforma. Buzones de soporte, ventas, y más."
                 delay={0}
@@ -92,7 +93,7 @@ export default function EmailChannelPage() {
             </ScrollReveal>
             <ScrollReveal>
               <Card
-                icon="⏱️"
+                icon={Clock}
                 title="SLA por Cliente"
                 description="Establece tiempos de respuesta por cliente o tipo de consulta. Recibe alertas si se incumple."
                 delay={0.1}
@@ -100,7 +101,7 @@ export default function EmailChannelPage() {
             </ScrollReveal>
             <ScrollReveal>
               <Card
-                icon="🔗"
+                icon={Link2}
                 title="Hilos Unificados"
                 description="Cada conversación aparece como un hilo único, sin importar si hay forwards o cambios de asunto."
                 delay={0.2}

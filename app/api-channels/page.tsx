@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { Smartphone, Globe, Link } from 'lucide-react'
 import PageHero from '@/components/PageHero'
 import FeatureRow from '@/components/FeatureRow'
 import Card from '@/components/Card'
@@ -84,7 +85,7 @@ export default function ApiChannelsPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
             <ScrollReveal>
               <Card
-                icon="📱"
+                icon={Smartphone}
                 title="App Móvil Propia"
                 description="Crea tu app de atención al cliente con WizeHub como backend. Tus usuarios ven el mismo contexto que en web."
                 delay={0}
@@ -92,7 +93,7 @@ export default function ApiChannelsPage() {
             </ScrollReveal>
             <ScrollReveal>
               <Card
-                icon="🌐"
+                icon={Globe}
                 title="Portal de Clientes"
                 description="Tu sitio web conectado a WizeHub. Los clientes escriben en tu portal, los agentes responden desde la plataforma."
                 delay={0.1}
@@ -100,7 +101,7 @@ export default function ApiChannelsPage() {
             </ScrollReveal>
             <ScrollReveal>
               <Card
-                icon="🔗"
+                icon={Link}
                 title="Canales Legados"
                 description="¿Tienes un sistema antiguo? Intégralo vía API. WizeHub actúa como middleware entre tu legacy y nuevas herramientas."
                 delay={0.2}

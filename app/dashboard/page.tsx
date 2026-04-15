@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { User, Eye, Settings } from 'lucide-react'
 import PageHero from '@/components/PageHero'
 import FeatureRow from '@/components/FeatureRow'
 import Card from '@/components/Card'
@@ -89,19 +90,19 @@ export default function DashboardPage() {
           />
           <div className="grid sm:grid-cols-3 gap-5">
             <Card
-              icon="👤"
+              icon={User}
               title="Agente"
               description="Gestiona tu bandeja personal, responde conversaciones, deja notas y solicita ayuda a compañeros. Acceso rápido a históricos y contexto del cliente."
               delay={0}
             />
             <Card
-              icon="👁️"
+              icon={Eye}
               title="Supervisor"
               description="Monitorea la calidad del equipo, escucha conversaciones, revisa métricas de SLA y detecta entrenamientos necesarios. Carga de trabajo balanceada."
               delay={0.1}
             />
             <Card
-              icon="⚙️"
+              icon={Settings}
               title="Administrador"
               description="Configura flujos, reglas, integraciones y permisos. Análisis de tendencias, gestión de usuarios y acceso a API. Control total de la plataforma."
               delay={0.2}

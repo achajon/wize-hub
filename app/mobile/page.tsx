@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { Fingerprint, Battery, ShieldCheck } from 'lucide-react'
 import PageHero from '@/components/PageHero'
 import FeatureRow from '@/components/FeatureRow'
 import Card from '@/components/Card'
@@ -84,7 +85,7 @@ export default function MobilePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
             <ScrollReveal>
               <Card
-                icon="👆"
+                icon={Fingerprint}
                 title="Gestos Optimizados"
                 description="Swipe para responder, tap para revisar contexto, hold para acciones rápidas. Flujo natural."
                 delay={0}
@@ -92,7 +93,7 @@ export default function MobilePage() {
             </ScrollReveal>
             <ScrollReveal>
               <Card
-                icon="🔋"
+                icon={Battery}
                 title="Eficiencia"
                 description="Optimizada para batería. La app consume mínimo. Cero lag incluso con cientos de conversaciones."
                 delay={0.1}
@@ -100,7 +101,7 @@ export default function MobilePage() {
             </ScrollReveal>
             <ScrollReveal>
               <Card
-                icon="🔒"
+                icon={ShieldCheck}
                 title="Seguridad"
                 description="Biometría para desbloquear. Datos cifrados en tránsito. Acorde a normativas de privacidad."
                 delay={0.2}

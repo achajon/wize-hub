@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { ShoppingBag, Calendar, Newspaper } from 'lucide-react'
 import PageHero from '@/components/PageHero'
 import FeatureRow from '@/components/FeatureRow'
 import Card from '@/components/Card'
@@ -68,7 +69,7 @@ export default function FacebookPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
             <ScrollReveal>
               <Card
-                icon="🛍️"
+                icon={ShoppingBag}
                 title="Retail"
                 description="Consultas de productos, estado de pedidos, devoluciones. Todo en mensajes, sin transferencias."
                 delay={0}
@@ -76,7 +77,7 @@ export default function FacebookPage() {
             </ScrollReveal>
             <ScrollReveal>
               <Card
-                icon="📅"
+                icon={Calendar}
                 title="Eventos"
                 description="Confirma asistencia, resuelve dudas sobre lugar y hora. Automatiza registro de participantes."
                 delay={0.1}
@@ -84,7 +85,7 @@ export default function FacebookPage() {
             </ScrollReveal>
             <ScrollReveal>
               <Card
-                icon="📰"
+                icon={Newspaper}
                 title="Medios"
                 description="Recibe tips de tus seguidores, coordina entrevistas, publica noticias. Todo desde Messenger."
                 delay={0.2}
