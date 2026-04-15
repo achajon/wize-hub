@@ -21,7 +21,7 @@ export default function AboutPage() {
         secondaryCta={{ label: 'Ver Empleos', href: '#' }}
       />
 
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-slate-50">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-wz-bg2">
         <div className="max-w-6xl mx-auto">
           <SectionHead
             kicker="NUESTRA HISTORIA"
@@ -32,7 +32,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
             <ScrollReveal>
               <Card
-                icon="target"
+                icon="🎯"
                 title="Misión"
                 description="Empoderar equipos de atención al cliente con herramientas modernas, intuitivas y accesibles. Sin complejidad innecesaria."
                 delay={0}
@@ -40,7 +40,7 @@ export default function AboutPage() {
             </ScrollReveal>
             <ScrollReveal>
               <Card
-                icon="rocket"
+                icon="🚀"
                 title="Visión"
                 description="Ser la plataforma de comunicación preferida para empresas que valoran a sus clientes. En cualquier mercado."
                 delay={0.1}
@@ -48,7 +48,7 @@ export default function AboutPage() {
             </ScrollReveal>
             <ScrollReveal>
               <Card
-                icon="heart"
+                icon="❤️"
                 title="Valores"
                 description="Simplicidad, transparencia, excelencia. Escuchamos a nuestros usuarios. Hacemos lo correcto siempre."
                 delay={0.2}
@@ -68,66 +68,66 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-12">
             <ScrollReveal>
-              <div className="rounded-lg border border-slate-200 p-8 h-full">
-                <h3 className="text-2xl font-bold text-slate-900 mb-4">WizeHub</h3>
-                <p className="text-slate-700 mb-6">La plataforma de atención al cliente. Donde tus agentes responden, colaboran y resuelven.</p>
+              <div className="rounded-lg border border-slate-200 dark:border-slate-700/60 p-8 h-full">
+                <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4">WizeHub</h3>
+                <p className="text-slate-700 dark:text-slate-300 mb-6">La plataforma de atención al cliente. Donde tus agentes responden, colaboran y resuelven.</p>
                 <ul className="space-y-3">
                   <li className="flex items-start">
-                    <span className="mr-3 text-slate-400">•</span>
-                    <span className="text-slate-700">Múltiples canales unificados</span>
+                    <span className="mr-3 text-slate-400 dark:text-slate-500">•</span>
+                    <span className="text-slate-700 dark:text-slate-300">Múltiples canales unificados</span>
                   </li>
                   <li className="flex items-start">
                     <span className="mr-3 text-slate-400">•</span>
-                    <span className="text-slate-700">Respuestas rápidas y plantillas</span>
+                    <span className="text-slate-700 dark:text-slate-300">Respuestas rápidas y plantillas</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="mr-3 text-slate-400">•</span>
-                    <span className="text-slate-700">Automatizaciones básicas y avanzadas</span>
+                    <span className="mr-3 text-slate-400 dark:text-slate-500">•</span>
+                    <span className="text-slate-700 dark:text-slate-300">Automatizaciones básicas y avanzadas</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="mr-3 text-slate-400">•</span>
-                    <span className="text-slate-700">Reportes y métricas</span>
+                    <span className="mr-3 text-slate-400 dark:text-slate-500">•</span>
+                    <span className="text-slate-700 dark:text-slate-300">Reportes y métricas</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="mr-3 text-slate-400">•</span>
-                    <span className="text-slate-700">Apps móviles nativas</span>
+                    <span className="mr-3 text-slate-400 dark:text-slate-500">•</span>
+                    <span className="text-slate-700 dark:text-slate-300">Apps móviles nativas</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="mr-3 text-slate-400">•</span>
-                    <span className="text-slate-700">Integraciones estándar</span>
+                    <span className="mr-3 text-slate-400 dark:text-slate-500">•</span>
+                    <span className="text-slate-700 dark:text-slate-300">Integraciones estándar</span>
                   </li>
                 </ul>
               </div>
             </ScrollReveal>
 
             <ScrollReveal>
-              <div className="rounded-lg border border-slate-200 p-8 h-full">
-                <h3 className="text-2xl font-bold text-slate-900 mb-4">WizeFlow</h3>
-                <p className="text-slate-700 mb-6">El builder visual para automatizar. Crea flujos, sincroniza datos, integra sistemas sin código.</p>
+              <div className="rounded-lg border border-slate-200 dark:border-slate-700/60 p-8 h-full">
+                <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4">WizeFlow</h3>
+                <p className="text-slate-700 dark:text-slate-300 mb-6">El builder visual para automatizar. Crea flujos, sincroniza datos, integra sistemas sin código.</p>
                 <ul className="space-y-3">
                   <li className="flex items-start">
-                    <span className="mr-3 text-slate-400">•</span>
-                    <span className="text-slate-700">Automatización avanzada visual</span>
+                    <span className="mr-3 text-slate-400 dark:text-slate-500">•</span>
+                    <span className="text-slate-700 dark:text-slate-300">Automatización avanzada visual</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="mr-3 text-slate-400">•</span>
-                    <span className="text-slate-700">Integración con cualquier API</span>
+                    <span className="mr-3 text-slate-400 dark:text-slate-500">•</span>
+                    <span className="text-slate-700 dark:text-slate-300">Integración con cualquier API</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="mr-3 text-slate-400">•</span>
-                    <span className="text-slate-700">Transformación de datos</span>
+                    <span className="mr-3 text-slate-400 dark:text-slate-500">•</span>
+                    <span className="text-slate-700 dark:text-slate-300">Transformación de datos</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="mr-3 text-slate-400">•</span>
-                    <span className="text-slate-700">Webhooks y triggers</span>
+                    <span className="mr-3 text-slate-400 dark:text-slate-500">•</span>
+                    <span className="text-slate-700 dark:text-slate-300">Webhooks y triggers</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="mr-3 text-slate-400">•</span>
-                    <span className="text-slate-700">Sincronización de bases de datos</span>
+                    <span className="mr-3 text-slate-400 dark:text-slate-500">•</span>
+                    <span className="text-slate-700 dark:text-slate-300">Sincronización de bases de datos</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="mr-3 text-slate-400">•</span>
-                    <span className="text-slate-700">No-code/low-code</span>
+                    <span className="mr-3 text-slate-400 dark:text-slate-500">•</span>
+                    <span className="text-slate-700 dark:text-slate-300">No-code/low-code</span>
                   </li>
                 </ul>
               </div>

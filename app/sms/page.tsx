@@ -57,7 +57,7 @@ export default function SmsPage() {
         </ScrollReveal>
       </section>
 
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-slate-50">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-wz-bg2">
         <div className="max-w-6xl mx-auto">
           <SectionHead
             kicker="ALCANCE"
@@ -68,7 +68,7 @@ export default function SmsPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
             <ScrollReveal>
               <Card
-                icon="send"
+                icon="📩"
                 title="Entrega 99.9%"
                 description="SMS es el canal más confiable. Tus mensajes llegan incluso en redes lentas."
                 delay={0}
@@ -76,7 +76,7 @@ export default function SmsPage() {
             </ScrollReveal>
             <ScrollReveal>
               <Card
-                icon="users"
+                icon="👥"
                 title="Sin Instalación"
                 description="No requiere app ni login. Todos tus clientes pueden recibir y responder SMS."
                 delay={0.1}
@@ -84,7 +84,7 @@ export default function SmsPage() {
             </ScrollReveal>
             <ScrollReveal>
               <Card
-                icon="trending-up"
+                icon="📈"
                 title="Alto Engagement"
                 description="SMS tiene tasa de apertura del 98%. El canal perfecto para urgencias y confirmaciones."
                 delay={0.2}

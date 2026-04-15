@@ -26,40 +26,40 @@ export default function PricingPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* HACKER PLAN */}
             <ScrollReveal>
-              <div className="rounded-lg border border-slate-200 bg-white p-8 flex flex-col h-full">
-                <h3 className="text-2xl font-bold text-slate-900 mb-2">Hacker</h3>
-                <p className="text-slate-600 mb-4">Para empezar</p>
+              <div className="rounded-lg border border-slate-200 dark:border-slate-700/60 bg-white dark:bg-slate-800/80 p-8 flex flex-col h-full">
+                <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-2">Hacker</h3>
+                <p className="text-slate-600 dark:text-slate-400 mb-4">Para empezar</p>
                 <div className="mb-8">
-                  <span className="text-4xl font-bold text-slate-900">$0</span>
-                  <span className="text-slate-600 ml-1">/mes</span>
+                  <span className="text-4xl font-bold text-slate-900 dark:text-slate-100">$0</span>
+                  <span className="text-slate-600 dark:text-slate-400 ml-1">/mes</span>
                 </div>
                 <ul className="space-y-3 flex-grow mb-8">
                   <li className="flex items-start">
-                    <span className="mr-3 text-slate-400">•</span>
-                    <span className="text-slate-700">2 agentes</span>
+                    <span className="mr-3 text-slate-400 dark:text-slate-500">•</span>
+                    <span className="text-slate-700 dark:text-slate-300">2 agentes</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="mr-3 text-slate-400">•</span>
-                    <span className="text-slate-700">Live Chat y Email</span>
+                    <span className="mr-3 text-slate-400 dark:text-slate-500">•</span>
+                    <span className="text-slate-700 dark:text-slate-300">Live Chat y Email</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="mr-3 text-slate-400">•</span>
-                    <span className="text-slate-700">Respuestas predefinidas</span>
+                    <span className="mr-3 text-slate-400 dark:text-slate-500">•</span>
+                    <span className="text-slate-700 dark:text-slate-300">Respuestas predefinidas</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="mr-3 text-slate-400">•</span>
-                    <span className="text-slate-700">Reportes básicos</span>
+                    <span className="mr-3 text-slate-400 dark:text-slate-500">•</span>
+                    <span className="text-slate-700 dark:text-slate-300">Reportes básicos</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="mr-3 text-slate-400">•</span>
-                    <span className="text-slate-700">Apps móviles</span>
+                    <span className="mr-3 text-slate-400 dark:text-slate-500">•</span>
+                    <span className="text-slate-700 dark:text-slate-300">Apps móviles</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="mr-3 text-slate-400">•</span>
-                    <span className="text-slate-700">Soporte por correo</span>
+                    <span className="mr-3 text-slate-400 dark:text-slate-500">•</span>
+                    <span className="text-slate-700 dark:text-slate-300">Soporte por correo</span>
                   </li>
                 </ul>
-                <button className="w-full px-4 py-2 rounded-lg border border-slate-300 text-slate-900 hover:bg-slate-50 transition font-medium">
+                <button className="w-full px-4 py-2 rounded-lg border border-slate-300 dark:border-slate-600 text-slate-900 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-700 transition font-medium">
                   Comenzar
                 </button>
               </div>
@@ -67,40 +67,40 @@ export default function PricingPage() {
 
             {/* STARTUP PLAN */}
             <ScrollReveal>
-              <div className="rounded-lg border border-slate-200 bg-white p-8 flex flex-col h-full">
-                <h3 className="text-2xl font-bold text-slate-900 mb-2">Startup</h3>
-                <p className="text-slate-600 mb-4">Para crecer</p>
+              <div className="rounded-lg border border-slate-200 dark:border-slate-700/60 bg-white dark:bg-slate-800/80 p-8 flex flex-col h-full">
+                <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-2">Startup</h3>
+                <p className="text-slate-600 dark:text-slate-400 mb-4">Para crecer</p>
                 <div className="mb-8">
-                  <span className="text-4xl font-bold text-slate-900">$19</span>
-                  <span className="text-slate-600 ml-1">/agente/mes</span>
+                  <span className="text-4xl font-bold text-slate-900 dark:text-slate-100">$19</span>
+                  <span className="text-slate-600 dark:text-slate-400 ml-1">/agente/mes</span>
                 </div>
                 <ul className="space-y-3 flex-grow mb-8">
                   <li className="flex items-start">
-                    <span className="mr-3 text-emerald-600">✓</span>
-                    <span className="text-slate-700">Todo de Hacker +</span>
+                    <span className="mr-3 text-emerald-600 dark:text-emerald-400">✓</span>
+                    <span className="text-slate-700 dark:text-slate-300">Todo de Hacker +</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="mr-3 text-emerald-600">✓</span>
-                    <span className="text-slate-700">WhatsApp API</span>
+                    <span className="mr-3 text-emerald-600 dark:text-emerald-400">✓</span>
+                    <span className="text-slate-700 dark:text-slate-300">WhatsApp API</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="mr-3 text-emerald-600">✓</span>
-                    <span className="text-slate-700">Instagram y Facebook</span>
+                    <span className="mr-3 text-emerald-600 dark:text-emerald-400">✓</span>
+                    <span className="text-slate-700 dark:text-slate-300">Instagram y Facebook</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="mr-3 text-emerald-600">✓</span>
-                    <span className="text-slate-700">Automatizaciones básicas</span>
+                    <span className="mr-3 text-emerald-600 dark:text-emerald-400">✓</span>
+                    <span className="text-slate-700 dark:text-slate-300">Automatizaciones básicas</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="mr-3 text-emerald-600">✓</span>
-                    <span className="text-slate-700">Etiquetas y equipos</span>
+                    <span className="mr-3 text-emerald-600 dark:text-emerald-400">✓</span>
+                    <span className="text-slate-700 dark:text-slate-300">Etiquetas y equipos</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="mr-3 text-emerald-600">✓</span>
-                    <span className="text-slate-700">Integraciones estándar</span>
+                    <span className="mr-3 text-emerald-600 dark:text-emerald-400">✓</span>
+                    <span className="text-slate-700 dark:text-slate-300">Integraciones estándar</span>
                   </li>
                 </ul>
-                <button className="w-full px-4 py-2 rounded-lg border border-slate-300 text-slate-900 hover:bg-slate-50 transition font-medium">
+                <button className="w-full px-4 py-2 rounded-lg border border-slate-300 dark:border-slate-600 text-slate-900 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-700 transition font-medium">
                   Elegir Plan
                 </button>
               </div>
@@ -108,9 +108,9 @@ export default function PricingPage() {
 
             {/* BUSINESS PLAN - POPULAR */}
             <ScrollReveal>
-              <div className="rounded-lg border-2 border-slate-900 bg-slate-900 text-white p-8 flex flex-col h-full ring-2 ring-offset-2 ring-slate-900 relative">
+              <div className="rounded-lg border-2 border-slate-900 dark:border-indigo-500 bg-slate-900 dark:bg-gradient-to-br dark:from-indigo-950 dark:to-slate-900 text-white p-8 flex flex-col h-full ring-2 ring-offset-2 ring-slate-900 dark:ring-indigo-500 dark:ring-offset-wz-bg relative">
                 <div className="absolute top-0 left-0 right-0 flex justify-center -translate-y-1/2">
-                  <span className="px-3 py-1 bg-slate-900 text-white text-sm font-semibold rounded-full">POPULAR</span>
+                  <span className="px-3 py-1 bg-slate-900 dark:bg-indigo-500 text-white text-sm font-semibold rounded-full">POPULAR</span>
                 </div>
                 <h3 className="text-2xl font-bold mb-2">Business</h3>
                 <p className="text-slate-300 mb-4">Lo más elegido</p>
@@ -148,7 +148,7 @@ export default function PricingPage() {
                     <span>Soporte prioritario</span>
                   </li>
                 </ul>
-                <button className="w-full px-4 py-2 rounded-lg bg-white text-slate-900 hover:bg-slate-100 transition font-medium">
+                <button className="w-full px-4 py-2 rounded-lg wz-gradient text-white hover:shadow-lg hover:shadow-indigo-500/30 transition font-medium">
                   Elegir Plan
                 </button>
               </div>
@@ -156,43 +156,43 @@ export default function PricingPage() {
 
             {/* ENTERPRISE PLAN */}
             <ScrollReveal>
-              <div className="rounded-lg border border-slate-200 bg-white p-8 flex flex-col h-full">
-                <h3 className="text-2xl font-bold text-slate-900 mb-2">Enterprise</h3>
-                <p className="text-slate-600 mb-4">Para grandes equipos</p>
+              <div className="rounded-lg border border-slate-200 dark:border-slate-700/60 bg-white dark:bg-slate-800/80 p-8 flex flex-col h-full">
+                <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-2">Enterprise</h3>
+                <p className="text-slate-600 dark:text-slate-400 mb-4">Para grandes equipos</p>
                 <div className="mb-8">
-                  <span className="text-3xl font-bold text-slate-900">Personalizado</span>
+                  <span className="text-3xl font-bold text-slate-900 dark:text-slate-100">Personalizado</span>
                 </div>
                 <ul className="space-y-3 flex-grow mb-8">
                   <li className="flex items-start">
-                    <span className="mr-3 text-emerald-600">✓</span>
-                    <span className="text-slate-700">Todo de Business +</span>
+                    <span className="mr-3 text-emerald-600 dark:text-emerald-400">✓</span>
+                    <span className="text-slate-700 dark:text-slate-300">Todo de Business +</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="mr-3 text-emerald-600">✓</span>
-                    <span className="text-slate-700">SSO/SAML y auditoría</span>
+                    <span className="mr-3 text-emerald-600 dark:text-emerald-400">✓</span>
+                    <span className="text-slate-700 dark:text-slate-300">SSO/SAML y auditoría</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="mr-3 text-emerald-600">✓</span>
-                    <span className="text-slate-700">SLA empresarial</span>
+                    <span className="mr-3 text-emerald-600 dark:text-emerald-400">✓</span>
+                    <span className="text-slate-700 dark:text-slate-300">SLA empresarial</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="mr-3 text-emerald-600">✓</span>
-                    <span className="text-slate-700">Integraciones a medida</span>
+                    <span className="mr-3 text-emerald-600 dark:text-emerald-400">✓</span>
+                    <span className="text-slate-700 dark:text-slate-300">Integraciones a medida</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="mr-3 text-emerald-600">✓</span>
-                    <span className="text-slate-700">Onboarding asistido</span>
+                    <span className="mr-3 text-emerald-600 dark:text-emerald-400">✓</span>
+                    <span className="text-slate-700 dark:text-slate-300">Onboarding asistido</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="mr-3 text-emerald-600">✓</span>
-                    <span className="text-slate-700">WizeFlow a medida</span>
+                    <span className="mr-3 text-emerald-600 dark:text-emerald-400">✓</span>
+                    <span className="text-slate-700 dark:text-slate-300">WizeFlow a medida</span>
                   </li>
                   <li className="flex items-start">
-                    <span className="mr-3 text-emerald-600">✓</span>
-                    <span className="text-slate-700">Residencia de datos</span>
+                    <span className="mr-3 text-emerald-600 dark:text-emerald-400">✓</span>
+                    <span className="text-slate-700 dark:text-slate-300">Residencia de datos</span>
                   </li>
                 </ul>
-                <button className="w-full px-4 py-2 rounded-lg border border-slate-300 text-slate-900 hover:bg-slate-50 transition font-medium">
+                <button className="w-full px-4 py-2 rounded-lg border border-slate-300 dark:border-slate-600 text-slate-900 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-700 transition font-medium">
                   Contactar
                 </button>
               </div>
@@ -201,7 +201,7 @@ export default function PricingPage() {
         </div>
       </section>
 
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-slate-50">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-wz-bg2">
         <div className="max-w-6xl mx-auto">
           <SectionHead
             kicker="PREGUNTAS FRECUENTES"

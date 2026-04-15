@@ -140,11 +140,11 @@ export default function WizeFlowPage() {
               },
             ].map((item) => (
               <ScrollReveal key={item.step} delay={item.step * 0.1}>
-                <div className="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl p-7 h-full relative">
+                <div className="bg-white dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700/60 rounded-2xl p-7 h-full relative">
                   <div className="absolute -top-5 -left-5 w-12 h-12 rounded-2xl bg-gradient-to-br from-indigo-600 to-cyan-500 flex items-center justify-center text-white font-bold text-lg shadow-lg">
                     {item.step}
                   </div>
-                  <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-3 mt-2">{item.title}</h3>
+                  <h3 className="text-lg font-bold text-slate-900 dark:text-slate-100 mb-3 mt-2">{item.title}</h3>
                   <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">{item.description}</p>
                 </div>
               </ScrollReveal>

@@ -73,7 +73,7 @@ export default function ApiChannelsPage() {
         </ScrollReveal>
       </section>
 
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-slate-50">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-wz-bg2">
         <div className="max-w-6xl mx-auto">
           <SectionHead
             kicker="CASOS DE USO"
@@ -84,7 +84,7 @@ export default function ApiChannelsPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
             <ScrollReveal>
               <Card
-                icon="smartphone"
+                icon="📱"
                 title="App Móvil Propia"
                 description="Crea tu app de atención al cliente con WizeHub como backend. Tus usuarios ven el mismo contexto que en web."
                 delay={0}
@@ -92,7 +92,7 @@ export default function ApiChannelsPage() {
             </ScrollReveal>
             <ScrollReveal>
               <Card
-                icon="globe"
+                icon="🌐"
                 title="Portal de Clientes"
                 description="Tu sitio web conectado a WizeHub. Los clientes escriben en tu portal, los agentes responden desde la plataforma."
                 delay={0.1}
@@ -100,7 +100,7 @@ export default function ApiChannelsPage() {
             </ScrollReveal>
             <ScrollReveal>
               <Card
-                icon="layers"
+                icon="🔗"
                 title="Canales Legados"
                 description="¿Tienes un sistema antiguo? Intégralo vía API. WizeHub actúa como middleware entre tu legacy y nuevas herramientas."
                 delay={0.2}
@@ -111,27 +111,27 @@ export default function ApiChannelsPage() {
       </section>
 
       <section className="py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-3xl mx-auto bg-slate-100 rounded-lg p-8">
+        <div className="max-w-3xl mx-auto bg-slate-100 dark:bg-slate-800/80 rounded-lg p-8">
           <SectionHead
             kicker="DETALLES TÉCNICOS"
             title="Lo que Necesitas Saber"
             description="Especificaciones de la API para desarrolladores."
           />
-          <ul className="mt-8 space-y-3 text-slate-700">
+          <ul className="mt-8 space-y-3 text-slate-700 dark:text-slate-300">
             <li className="flex items-start">
-              <span className="mr-3 font-semibold text-slate-900">•</span>
+              <span className="mr-3 font-semibold text-slate-900 dark:text-slate-100">•</span>
               <span><strong>Rate Limits:</strong> 1000 req/min por token. Upgradeable según plan.</span>
             </li>
             <li className="flex items-start">
-              <span className="mr-3 font-semibold text-slate-900">•</span>
+              <span className="mr-3 font-semibold text-slate-900 dark:text-slate-100">•</span>
               <span><strong>Autenticación:</strong> JWT. Genera tokens desde tu dashboard.</span>
             </li>
             <li className="flex items-start">
-              <span className="mr-3 font-semibold text-slate-900">•</span>
+              <span className="mr-3 font-semibold text-slate-900 dark:text-slate-100">•</span>
               <span><strong>Versionado:</strong> API v1 estable. Cambios anunciados 30 días antes.</span>
             </li>
             <li className="flex items-start">
-              <span className="mr-3 font-semibold text-slate-900">•</span>
+              <span className="mr-3 font-semibold text-slate-900 dark:text-slate-100">•</span>
               <span><strong>SLA:</strong> 99.9% uptime. Status.wizehub.com para estatus en vivo.</span>
             </li>
           </ul>

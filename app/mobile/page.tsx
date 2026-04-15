@@ -73,7 +73,7 @@ export default function MobilePage() {
         </ScrollReveal>
       </section>
 
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-slate-50">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-wz-bg2">
         <div className="max-w-6xl mx-auto">
           <SectionHead
             kicker="EXPERIENCIA"
@@ -84,7 +84,7 @@ export default function MobilePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
             <ScrollReveal>
               <Card
-                icon="touch"
+                icon="👆"
                 title="Gestos Optimizados"
                 description="Swipe para responder, tap para revisar contexto, hold para acciones rápidas. Flujo natural."
                 delay={0}
@@ -92,7 +92,7 @@ export default function MobilePage() {
             </ScrollReveal>
             <ScrollReveal>
               <Card
-                icon="battery"
+                icon="🔋"
                 title="Eficiencia"
                 description="Optimizada para batería. La app consume mínimo. Cero lag incluso con cientos de conversaciones."
                 delay={0.1}
@@ -100,7 +100,7 @@ export default function MobilePage() {
             </ScrollReveal>
             <ScrollReveal>
               <Card
-                icon="lock"
+                icon="🔒"
                 title="Seguridad"
                 description="Biometría para desbloquear. Datos cifrados en tránsito. Acorde a normativas de privacidad."
                 delay={0.2}

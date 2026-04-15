@@ -40,7 +40,7 @@ export default function IntegrationsPage() {
         </ScrollReveal>
       </section>
 
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-slate-50">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-wz-bg2">
         <div className="max-w-6xl mx-auto">
           <SectionHead
             kicker="INTEGRACIONES NATIVAS"
@@ -51,7 +51,7 @@ export default function IntegrationsPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
             <ScrollReveal>
               <Card
-                icon="shopping-bag"
+                icon="🛍️"
                 title="Shopify"
                 description="Sincroniza órdenes, clientes y productos. Consulta historial de compras en conversaciones."
                 delay={0}
@@ -59,7 +59,7 @@ export default function IntegrationsPage() {
             </ScrollReveal>
             <ScrollReveal>
               <Card
-                icon="shopping-cart"
+                icon="🛒"
                 title="WooCommerce"
                 description="Para tiendas WordPress. Mismo poder que Shopify. Acceso a datos de órdenes y clientes."
                 delay={0.1}
@@ -67,7 +67,7 @@ export default function IntegrationsPage() {
             </ScrollReveal>
             <ScrollReveal>
               <Card
-                icon="trending-up"
+                icon="📈"
                 title="HubSpot"
                 description="Sincroniza contactos, deals y tickets. Los datos de HubSpot fluyen a WizeHub en tiempo real."
                 delay={0.2}
@@ -75,7 +75,7 @@ export default function IntegrationsPage() {
             </ScrollReveal>
             <ScrollReveal>
               <Card
-                icon="users"
+                icon="☁️"
                 title="Salesforce"
                 description="Conecta con Salesforce Cloud. Accede a cuentas, contactos y oportunidades desde WizeHub."
                 delay={0.3}
@@ -83,7 +83,7 @@ export default function IntegrationsPage() {
             </ScrollReveal>
             <ScrollReveal>
               <Card
-                icon="headphones"
+                icon="🎧"
                 title="Zendesk"
                 description="Para equipos de soporte. Sincroniza tickets, usuarios y comentarios privados."
                 delay={0.4}
@@ -91,7 +91,7 @@ export default function IntegrationsPage() {
             </ScrollReveal>
             <ScrollReveal>
               <Card
-                icon="calendar"
+                icon="📅"
                 title="Google Calendar"
                 description="Ve el calendario del agente en WizeHub. Programa citas directamente desde conversaciones."
                 delay={0.5}
@@ -99,7 +99,7 @@ export default function IntegrationsPage() {
             </ScrollReveal>
             <ScrollReveal>
               <Card
-                icon="credit-card"
+                icon="💳"
                 title="Stripe"
                 description="Información de pagos en contexto. Ver suscripciones y facturación sin salir de WizeHub."
                 delay={0.6}
@@ -107,7 +107,7 @@ export default function IntegrationsPage() {
             </ScrollReveal>
             <ScrollReveal>
               <Card
-                icon="zap"
+                icon="⚡"
                 title="Zapier"
                 description="Conecta con miles de apps. Si Zapier lo soporta, WizeHub lo hace también."
                 delay={0.7}
@@ -124,11 +124,11 @@ export default function IntegrationsPage() {
             title="Integraciones Personalizadas"
             description="¿Necesitas conectar algo que no está en la lista?"
           />
-          <p className="text-center text-slate-700 mt-6 text-lg">
+          <p className="text-center text-slate-700 dark:text-slate-300 mt-6 text-lg">
             Usa <strong>WizeFlow</strong>, nuestro builder visual no-code/low-code. Crea automaciones complejas, sincroniza datos entre WizeHub y cualquier sistema, todo sin código.
           </p>
           <div className="text-center mt-8">
-            <a href="#" className="inline-block px-6 py-3 bg-slate-900 text-white rounded-lg hover:bg-slate-800 transition">
+            <a href="#" className="inline-block px-6 py-3 wz-gradient text-white rounded-lg shadow-lg shadow-indigo-500/30 hover:shadow-indigo-500/50 transition">
               Explorar WizeFlow
             </a>
           </div>

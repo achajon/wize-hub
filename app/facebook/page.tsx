@@ -57,7 +57,7 @@ export default function FacebookPage() {
         </ScrollReveal>
       </section>
 
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-slate-50">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-wz-bg2">
         <div className="max-w-6xl mx-auto">
           <SectionHead
             kicker="CASOS DE USO"
@@ -68,7 +68,7 @@ export default function FacebookPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
             <ScrollReveal>
               <Card
-                icon="shopping-bag"
+                icon="🛍️"
                 title="Retail"
                 description="Consultas de productos, estado de pedidos, devoluciones. Todo en mensajes, sin transferencias."
                 delay={0}
@@ -76,7 +76,7 @@ export default function FacebookPage() {
             </ScrollReveal>
             <ScrollReveal>
               <Card
-                icon="calendar"
+                icon="📅"
                 title="Eventos"
                 description="Confirma asistencia, resuelve dudas sobre lugar y hora. Automatiza registro de participantes."
                 delay={0.1}
@@ -84,7 +84,7 @@ export default function FacebookPage() {
             </ScrollReveal>
             <ScrollReveal>
               <Card
-                icon="newspaper"
+                icon="📰"
                 title="Medios"
                 description="Recibe tips de tus seguidores, coordina entrevistas, publica noticias. Todo desde Messenger."
                 delay={0.2}

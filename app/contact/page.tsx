@@ -63,11 +63,11 @@ export default function ContactPage() {
           />
 
           <ScrollReveal>
-            <form id="contact-form" onSubmit={handleSubmit} className="mt-12 space-y-6 bg-slate-50 p-8 rounded-lg">
+            <form id="contact-form" onSubmit={handleSubmit} className="mt-12 space-y-6 bg-slate-50 dark:bg-slate-800/80 p-8 rounded-lg">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {/* Nombre */}
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-slate-900 mb-2">
+                  <label htmlFor="name" className="block text-sm font-medium text-slate-900 dark:text-slate-100 mb-2">
                     Nombre
                   </label>
                   <input
@@ -77,14 +77,14 @@ export default function ContactPage() {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-900"
+                    className="w-full px-4 py-2 border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-wz-primary"
                     placeholder="Juan Pérez"
                   />
                 </div>
 
                 {/* Empresa */}
                 <div>
-                  <label htmlFor="company" className="block text-sm font-medium text-slate-900 mb-2">
+                  <label htmlFor="company" className="block text-sm font-medium text-slate-900 dark:text-slate-100 mb-2">
                     Empresa
                   </label>
                   <input
@@ -94,7 +94,7 @@ export default function ContactPage() {
                     value={formData.company}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-900"
+                    className="w-full px-4 py-2 border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-wz-primary"
                     placeholder="Mi Negocio"
                   />
                 </div>
@@ -103,7 +103,7 @@ export default function ContactPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {/* Email */}
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-slate-900 mb-2">
+                  <label htmlFor="email" className="block text-sm font-medium text-slate-900 dark:text-slate-100 mb-2">
                     Email
                   </label>
                   <input
@@ -113,14 +113,14 @@ export default function ContactPage() {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-900"
+                    className="w-full px-4 py-2 border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-wz-primary"
                     placeholder="juan@ejemplo.com"
                   />
                 </div>
 
                 {/* Teléfono */}
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-slate-900 mb-2">
+                  <label htmlFor="phone" className="block text-sm font-medium text-slate-900 dark:text-slate-100 mb-2">
                     Teléfono
                   </label>
                   <input
@@ -130,7 +130,7 @@ export default function ContactPage() {
                     value={formData.phone}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-900"
+                    className="w-full px-4 py-2 border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-wz-primary"
                     placeholder="+34 600 123 456"
                   />
                 </div>
@@ -138,7 +138,7 @@ export default function ContactPage() {
 
               {/* Asunto (Select) */}
               <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-slate-900 mb-2">
+                <label htmlFor="subject" className="block text-sm font-medium text-slate-900 dark:text-slate-100 mb-2">
                   Asunto
                 </label>
                 <select
@@ -147,7 +147,7 @@ export default function ContactPage() {
                   value={formData.subject}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-900"
+                  className="w-full px-4 py-2 border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-wz-primary"
                 >
                   <option value="">Selecciona un asunto</option>
                   <option value="sales">Información sobre Planes</option>
@@ -160,7 +160,7 @@ export default function ContactPage() {
 
               {/* Mensaje */}
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-slate-900 mb-2">
+                <label htmlFor="message" className="block text-sm font-medium text-slate-900 dark:text-slate-100 mb-2">
                   Mensaje
                 </label>
                 <textarea
@@ -179,14 +179,14 @@ export default function ContactPage() {
               <div>
                 <button
                   type="submit"
-                  className="w-full px-6 py-3 bg-slate-900 text-white rounded-lg hover:bg-slate-800 transition font-medium"
+                  className="w-full px-6 py-3 wz-gradient text-white rounded-lg hover:shadow-lg hover:shadow-indigo-500/30 transition font-medium"
                 >
                   Enviar Mensaje
                 </button>
               </div>
 
               {submitted && (
-                <div className="p-4 bg-emerald-50 border border-emerald-200 rounded-lg text-emerald-800">
+                <div className="p-4 bg-emerald-50 dark:bg-emerald-900/30 border border-emerald-200 dark:border-emerald-700 rounded-lg text-emerald-800 dark:text-emerald-300">
                   Mensaje enviado correctamente. Nos contactaremos pronto.
                 </div>
               )}

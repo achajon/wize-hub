@@ -19,7 +19,7 @@ export default function FeatureRow({ kicker, title, description, mockText, rever
       <div className={`grid lg:grid-cols-2 gap-14 items-center py-12 ${reverse ? 'lg:direction-rtl' : ''}`}>
         <div className={reverse ? 'lg:order-2' : ''}>
           <Kicker>{kicker}</Kicker>
-          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white mb-4">{title}</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-slate-100 mb-4">{title}</h2>
           <p className="text-slate-500 dark:text-slate-400 leading-relaxed">{description}</p>
           {bullets && (
             <ul className="mt-4 space-y-2">
@@ -27,7 +27,7 @@ export default function FeatureRow({ kicker, title, description, mockText, rever
             </ul>
           )}
           {ctaLabel && ctaHref && (
-            <Link href={ctaHref} className="inline-flex mt-5 px-5 py-2.5 rounded-xl text-sm font-semibold bg-slate-900 dark:bg-white dark:text-slate-900 text-white hover:bg-slate-700 dark:hover:bg-slate-200 transition">
+            <Link href={ctaHref} className="inline-flex mt-5 px-5 py-2.5 rounded-xl text-sm font-semibold wz-gradient text-white shadow-lg shadow-indigo-500/30 hover:shadow-indigo-500/50 transition">
               {ctaLabel}
             </Link>
           )}

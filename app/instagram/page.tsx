@@ -57,7 +57,7 @@ export default function InstagramPage() {
         </ScrollReveal>
       </section>
 
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-slate-50">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-wz-bg2">
         <div className="max-w-6xl mx-auto">
           <SectionHead
             kicker="CARACTERÍSTICAS"
@@ -68,7 +68,7 @@ export default function InstagramPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
             <ScrollReveal>
               <Card
-                icon="zap"
+                icon="⚡"
                 title="Auto-respuestas"
                 description="Responde automáticamente preguntas frecuentes. Ofrece información de contacto o ubicación al instante."
                 delay={0}
@@ -76,7 +76,7 @@ export default function InstagramPage() {
             </ScrollReveal>
             <ScrollReveal>
               <Card
-                icon="user"
+                icon="👤"
                 title="Captura de Leads"
                 description="Convierte visitantes en contactos. Recopila emails y teléfonos desde Instagram sin salir de WizeHub."
                 delay={0.1}
@@ -84,7 +84,7 @@ export default function InstagramPage() {
             </ScrollReveal>
             <ScrollReveal>
               <Card
-                icon="bar-chart"
+                icon="📊"
                 title="Métricas"
                 description="Mide tiempo de respuesta, volumen de mensajes y engagement. Optimiza tu estrategia con datos reales."
                 delay={0.2}

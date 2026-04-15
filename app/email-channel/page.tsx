@@ -73,7 +73,7 @@ export default function EmailChannelPage() {
         </ScrollReveal>
       </section>
 
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-slate-50">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-wz-bg2">
         <div className="max-w-6xl mx-auto">
           <SectionHead
             kicker="CAPACIDADES"
@@ -84,7 +84,7 @@ export default function EmailChannelPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
             <ScrollReveal>
               <Card
-                icon="inbox"
+                icon="📥"
                 title="Múltiples Buzones"
                 description="Conecta todos tus emails en una sola plataforma. Buzones de soporte, ventas, y más."
                 delay={0}
@@ -92,7 +92,7 @@ export default function EmailChannelPage() {
             </ScrollReveal>
             <ScrollReveal>
               <Card
-                icon="clock"
+                icon="⏱️"
                 title="SLA por Cliente"
                 description="Establece tiempos de respuesta por cliente o tipo de consulta. Recibe alertas si se incumple."
                 delay={0.1}
@@ -100,7 +100,7 @@ export default function EmailChannelPage() {
             </ScrollReveal>
             <ScrollReveal>
               <Card
-                icon="link"
+                icon="🔗"
                 title="Hilos Unificados"
                 description="Cada conversación aparece como un hilo único, sin importar si hay forwards o cambios de asunto."
                 delay={0.2}

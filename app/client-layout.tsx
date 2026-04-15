@@ -4,6 +4,7 @@ import { ThemeProvider } from '@/components/ThemeProvider'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import BackToTop from '@/components/BackToTop'
+import ChatwootWidget from '@/components/ChatwootWidget'
 
 export default function ClientLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -12,6 +13,7 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
       <main id="main">{children}</main>
       <Footer />
       <BackToTop />
+      <ChatwootWidget />
     </ThemeProvider>
   )
 }

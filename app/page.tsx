@@ -47,13 +47,13 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-[1.1fr_1fr] gap-14 items-center relative">
           <div>
             <Kicker>Plataforma omnicanal de Wize Devs</Kicker>
-            <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-extrabold tracking-tight leading-[1.08] mb-5 text-slate-900 dark:text-white">
+            <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-extrabold tracking-tight leading-[1.08] mb-5 text-slate-900 dark:text-slate-100">
               Un centro de comando <span className="wz-text-gradient">para todas tus conversaciones</span>.
             </h1>
             <p className="text-lg text-slate-500 dark:text-slate-400 max-w-xl">WizeHub unifica WhatsApp, Live Chat, Email, Instagram, Facebook y más en una sola bandeja colaborativa. Responde más rápido, vende más y construye relaciones duraderas con tus clientes.</p>
             <div className="flex flex-wrap gap-3 mt-7">
               <Link href="/pricing" className="px-5 py-3 rounded-xl text-sm font-semibold wz-gradient text-white shadow-lg shadow-indigo-500/30 hover:shadow-indigo-500/50 transition">Empezar prueba gratis →</Link>
-              <Link href="/contact" className="px-5 py-3 rounded-xl text-sm font-semibold border border-slate-200 dark:border-slate-600 text-slate-700 dark:text-white hover:border-wz-primary hover:text-wz-primary transition">Solicitar demo</Link>
+              <Link href="/contact" className="px-5 py-3 rounded-xl text-sm font-semibold border border-slate-200 dark:border-slate-600 text-slate-700 dark:text-slate-200 hover:border-wz-primary hover:text-wz-primary transition">Solicitar demo</Link>
             </div>
             <div className="grid grid-cols-4 gap-6 mt-8 max-w-lg">
               {[{ n: '12+', l: 'Canales' }, { n: '99.9%', l: 'Uptime' }, { n: '24/7', l: 'Soporte' }, { n: 'SLA', l: 'Empresarial' }].map(s => (
@@ -104,7 +104,7 @@ export default function HomePage() {
             {channels.map(c => (
               <Link key={c.href} href={c.href} className="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl p-5 text-center hover:-translate-y-1 hover:shadow-lg transition-all">
                 <div className="w-10 h-10 mx-auto mb-2 rounded-xl bg-slate-50 dark:bg-slate-700 flex items-center justify-center text-2xl">{c.icon}</div>
-                <div className="font-semibold text-sm text-slate-800 dark:text-white">{c.label}</div>
+                <div className="font-semibold text-sm text-slate-800 dark:text-slate-100">{c.label}</div>
               </Link>
             ))}
           </div>
@@ -168,9 +168,8 @@ export default function HomePage() {
           <div className="space-y-3">
             {faqs.map((f, i) => (
               <ScrollReveal key={f.q} delay={i * 0.06}>
-                <details className="group rounded-2xl border border-slate-200 bg-white
-                  dark:border-slate-700/60 dark:bg-gradient-to-br dark:from-slate-800/80 dark:to-slate-900/80
-                  dark:backdrop-blur-sm dark:shadow-[0_0_24px_-6px_rgba(99,102,241,.12)]
+                <details className="group rounded-2xl border border-slate-200 dark:border-slate-700/60 bg-white dark:bg-slate-800/80
+                  dark:backdrop-blur-sm
                   open:dark:border-indigo-500/30 open:dark:shadow-[0_0_32px_-4px_rgba(99,102,241,.2)]
                   transition-all duration-300">
                   <summary className="cursor-pointer p-5 md:p-6 font-semibold text-slate-900 dark:text-slate-100 flex justify-between items-center list-none
