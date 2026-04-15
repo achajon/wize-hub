@@ -24,13 +24,13 @@ export default function PricingPage() {
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* HACKER PLAN */}
+            {/* BÁSICO PLAN */}
             <ScrollReveal>
               <div className="rounded-lg border border-slate-200 dark:border-slate-700/60 bg-white dark:bg-slate-800/80 p-8 flex flex-col h-full">
-                <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-2">Hacker</h3>
+                <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-2">Básico</h3>
                 <p className="text-slate-600 dark:text-slate-400 mb-4">Para empezar</p>
                 <div className="mb-8">
-                  <span className="text-4xl font-bold text-slate-900 dark:text-slate-100">$0</span>
+                  <span className="text-4xl font-bold text-slate-900 dark:text-slate-100">Q0</span>
                   <span className="text-slate-600 dark:text-slate-400 ml-1">/mes</span>
                 </div>
                 <ul className="space-y-3 flex-grow mb-8">
@@ -65,19 +65,19 @@ export default function PricingPage() {
               </div>
             </ScrollReveal>
 
-            {/* STARTUP PLAN */}
+            {/* PROFESIONAL PLAN */}
             <ScrollReveal>
               <div className="rounded-lg border border-slate-200 dark:border-slate-700/60 bg-white dark:bg-slate-800/80 p-8 flex flex-col h-full">
-                <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-2">Startup</h3>
+                <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-2">Profesional</h3>
                 <p className="text-slate-600 dark:text-slate-400 mb-4">Para crecer</p>
                 <div className="mb-8">
-                  <span className="text-4xl font-bold text-slate-900 dark:text-slate-100">$19</span>
-                  <span className="text-slate-600 dark:text-slate-400 ml-1">/agente/mes</span>
+                  <span className="text-4xl font-bold text-slate-900 dark:text-slate-100">Q150</span>
+                  <span className="text-slate-600 dark:text-slate-400 ml-1">/mes</span>
                 </div>
                 <ul className="space-y-3 flex-grow mb-8">
                   <li className="flex items-start">
                     <span className="mr-3 text-emerald-600 dark:text-emerald-400">✓</span>
-                    <span className="text-slate-700 dark:text-slate-300">Todo de Hacker +</span>
+                    <span className="text-slate-700 dark:text-slate-300">Todo de Básico +</span>
                   </li>
                   <li className="flex items-start">
                     <span className="mr-3 text-emerald-600 dark:text-emerald-400">✓</span>
@@ -106,22 +106,22 @@ export default function PricingPage() {
               </div>
             </ScrollReveal>
 
-            {/* BUSINESS PLAN - POPULAR */}
+            {/* EMPRESARIAL PLAN - POPULAR */}
             <ScrollReveal>
               <div className="rounded-lg border-2 border-slate-900 dark:border-indigo-500 bg-slate-900 dark:bg-gradient-to-br dark:from-indigo-950 dark:to-slate-900 text-white p-8 flex flex-col h-full ring-2 ring-offset-2 ring-slate-900 dark:ring-indigo-500 dark:ring-offset-wz-bg relative">
                 <div className="absolute top-0 left-0 right-0 flex justify-center -translate-y-1/2">
                   <span className="px-3 py-1 bg-slate-900 dark:bg-indigo-500 text-white text-sm font-semibold rounded-full">POPULAR</span>
                 </div>
-                <h3 className="text-2xl font-bold mb-2">Business</h3>
+                <h3 className="text-2xl font-bold mb-2">Empresarial</h3>
                 <p className="text-slate-300 mb-4">Lo más elegido</p>
                 <div className="mb-8">
-                  <span className="text-4xl font-bold">$39</span>
-                  <span className="text-slate-300 ml-1">/agente/mes</span>
+                  <span className="text-4xl font-bold">Q250</span>
+                  <span className="text-slate-300 ml-1">/mes</span>
                 </div>
                 <ul className="space-y-3 flex-grow mb-8">
                   <li className="flex items-start">
                     <span className="mr-3 text-emerald-400">✓</span>
-                    <span>Todo de Startup +</span>
+                    <span>Todo de Profesional +</span>
                   </li>
                   <li className="flex items-start">
                     <span className="mr-3 text-emerald-400">✓</span>
@@ -133,7 +133,7 @@ export default function PricingPage() {
                   </li>
                   <li className="flex items-start">
                     <span className="mr-3 text-emerald-400">✓</span>
-                    <span>SMS y API</span>
+                    <span>Telegram y API</span>
                   </li>
                   <li className="flex items-start">
                     <span className="mr-3 text-emerald-400">✓</span>
@@ -165,7 +165,7 @@ export default function PricingPage() {
                 <ul className="space-y-3 flex-grow mb-8">
                   <li className="flex items-start">
                     <span className="mr-3 text-emerald-600 dark:text-emerald-400">✓</span>
-                    <span className="text-slate-700 dark:text-slate-300">Todo de Business +</span>
+                    <span className="text-slate-700 dark:text-slate-300">Todo de Empresarial +</span>
                   </li>
                   <li className="flex items-start">
                     <span className="mr-3 text-emerald-600 dark:text-emerald-400">✓</span>
@@ -241,14 +241,14 @@ export default function PricingPage() {
             <ScrollReveal>
               <Card
                 title="¿Qué incluye el soporte?"
-                description="Hacker: correo. Startup/Business: email y chat. Enterprise: dedicado 24/7."
+                description="Básico: correo. Profesional/Empresarial: email y chat. Enterprise: dedicado 24/7."
                 delay={0.4}
               />
             </ScrollReveal>
             <ScrollReveal>
               <Card
                 title="¿Hay período de prueba?"
-                description="Plan Hacker es gratuito siempre. Los demás los pruebas con tarjeta. Cancela cuando quieras."
+                description="Plan Básico es gratuito siempre. Los demás los pruebas con tarjeta. Cancela cuando quieras."
                 delay={0.5}
               />
             </ScrollReveal>

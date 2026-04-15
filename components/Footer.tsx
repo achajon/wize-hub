@@ -9,7 +9,7 @@ const cols = [
   { title: 'Canales', links: [
     { href: '/whatsapp', label: 'WhatsApp' }, { href: '/livechat', label: 'Live Chat' },
     { href: '/email-channel', label: 'Email' }, { href: '/instagram', label: 'Instagram' },
-    { href: '/facebook', label: 'Facebook' }, { href: '/sms', label: 'SMS' },
+    { href: '/facebook', label: 'Facebook' }, { href: '/telegram', label: 'Telegram' },
     { href: '/api-channels', label: 'API' },
   ]},
   { title: 'Empresa', links: [

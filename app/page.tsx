@@ -30,7 +30,7 @@ const channels = [
   { href: '/email-channel', icon: Mail, label: 'Email' },
   { href: '/instagram', icon: Camera, label: 'Instagram' },
   { href: '/facebook', icon: MessageSquare, label: 'Messenger' },
-  { href: '/sms', icon: Smartphone, label: 'SMS' },
+  { href: '/telegram', icon: Smartphone, label: 'Telegram' },
 ]
 
 const features = [
@@ -74,7 +74,7 @@ export default function HomePage() {
               <Link href="/contact" className="px-5 py-3 rounded-xl text-sm font-semibold border border-slate-200 dark:border-slate-600 text-slate-700 dark:text-slate-200 hover:border-wz-primary hover:text-wz-primary transition">Solicitar demo</Link>
             </div>
             <div className="grid grid-cols-4 gap-6 mt-8 max-w-lg">
-              {[{ n: '12+', l: 'Canales' }, { n: '99.9%', l: 'Uptime' }, { n: '24/7', l: 'Soporte' }, { n: 'SLA', l: 'Empresarial' }].map(s => (
+              {[{ n: '10+', l: 'Canales' }, { n: '99.9%', l: 'Uptime' }, { n: '24/7', l: 'Soporte' }, { n: 'SLA', l: 'Empresarial' }].map(s => (
                 <div key={s.l} className="text-center">
                   <div className="text-2xl font-extrabold wz-text-gradient">{s.n}</div>
                   <div className="text-xs text-slate-500 dark:text-slate-400">{s.l}</div>

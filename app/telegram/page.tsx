@@ -8,16 +8,16 @@ import CtaBand from '@/components/CtaBand'
 import ScrollReveal from '@/components/ScrollReveal'
 
 export const metadata: Metadata = {
-  title: 'Canal de SMS | WizeHub',
-  description: 'Notificaciones, recordatorios y conversaciones bidireccionales vía SMS integradas en WizeHub.',
+  title: 'Canal de Telegram | WizeHub',
+  description: 'Notificaciones, recordatorios y conversaciones bidireccionales vía Telegram integradas en WizeHub.',
 }
 
-export default function SmsPage() {
+export default function TelegramPage() {
   return (
     <>
       <PageHero
-        kicker="CANAL DE SMS"
-        title={<>SMS <span className="wz-text-gradient">Bidireccional</span></>}
+        kicker="CANAL DE TELEGRAM"
+        title={<>Telegram <span className="wz-text-gradient">Bidireccional</span></>}
         description="Notificaciones, recordatorios y conversaciones de dos vías. Llega a todos tus clientes al instante."
         primaryCta={{ label: 'Comenzar Gratis', href: '/contact' }}
         secondaryCta={{ label: 'Ver Demo', href: '#' }}
@@ -43,8 +43,8 @@ export default function SmsPage() {
         <ScrollReveal>
           <FeatureRow
             kicker="CONVERSACIÓN"
-            title="SMS Bidireccional"
-            description="Tus clientes responden directamente en SMS. Los mensajes llegan a WizeHub como cualquier otro canal. Una conversación real."
+            title="Telegram Bidireccional"
+            description="Tus clientes responden directamente en Telegram. Los mensajes llegan a WizeHub como cualquier otro canal. Una conversación real."
             mockText="Ejemplo: Cliente responde 'CONFIRMAR' a tu recordatorio. Tú ves su respuesta en WizeHub y el sistema actualiza su cita."
             reverse
             bullets={[
@@ -62,7 +62,7 @@ export default function SmsPage() {
         <div className="max-w-6xl mx-auto">
           <SectionHead
             kicker="ALCANCE"
-            title="SMS Llega a Todos"
+            title="Telegram Llega a Todos"
             description="El canal más directo con tus clientes."
           />
 
@@ -71,15 +71,15 @@ export default function SmsPage() {
               <Card
                 icon={Mail}
                 title="Entrega 99.9%"
-                description="SMS es el canal más confiable. Tus mensajes llegan incluso en redes lentas."
+                description="Telegram es el canal más confiable. Tus mensajes llegan incluso en redes lentas."
                 delay={0}
               />
             </ScrollReveal>
             <ScrollReveal>
               <Card
                 icon={Users}
-                title="Sin Instalación"
-                description="No requiere app ni login. Todos tus clientes pueden recibir y responder SMS."
+                title="Seguro y Privado"
+                description="Cifrado de extremo a extremo. Tus clientes pueden chatear con total privacidad y confianza."
                 delay={0.1}
               />
             </ScrollReveal>
@@ -87,7 +87,7 @@ export default function SmsPage() {
               <Card
                 icon={TrendingUp}
                 title="Alto Engagement"
-                description="SMS tiene tasa de apertura del 98%. El canal perfecto para urgencias y confirmaciones."
+                description="Telegram tiene tasa de apertura del 98%. El canal perfecto para urgencias y confirmaciones."
                 delay={0.2}
               />
             </ScrollReveal>
@@ -96,7 +96,7 @@ export default function SmsPage() {
       </section>
 
       <CtaBand
-        title="Conecta vía SMS"
+        title="Conecta vía Telegram"
         description="El canal más directo y confiable."
         primaryLabel="Crear Cuenta"
         primaryHref="/contact"

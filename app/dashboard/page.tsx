@@ -32,7 +32,7 @@ export default function DashboardPage() {
           <FeatureRow
             kicker="Bandeja Unificada"
             title="Todas tus conversaciones en un solo lugar"
-            description="WhatsApp, Live Chat, Email, Instagram, SMS: todo en una bandeja. Filtra por agente, equipo, estado, prioridad o etiqueta. Busca por cliente o contenido en milisegundos."
+            description="WhatsApp, Live Chat, Email, Instagram, Telegram: todo en una bandeja. Filtra por agente, equipo, estado, prioridad o etiqueta. Busca por cliente o contenido en milisegundos."
             mockText="[Captura: bandeja WizeHub mostrando mezcla de WhatsApp, Live Chat, Email con filtros activos]"
             bullets={[
               'Mezcla nativa de todos los canales',

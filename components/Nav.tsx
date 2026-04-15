@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { useState } from 'react'
 import { useTheme } from './ThemeProvider'
+import { Sun, Moon } from 'lucide-react'
 
 const productLinks = [
   { href: '/dashboard', label: 'Dashboard Colaborativo', desc: 'Bandeja unificada para equipos' },
@@ -17,7 +18,7 @@ const channelLinks = [
   { href: '/email-channel', label: 'Email', desc: 'Convierte correos en conversaciones' },
   { href: '/instagram', label: 'Instagram', desc: 'DMs y comentarios' },
   { href: '/facebook', label: 'Facebook Messenger', desc: 'Atención unificada' },
-  { href: '/sms', label: 'SMS', desc: 'Mensajería tradicional' },
+  { href: '/telegram', label: 'Telegram', desc: 'Mensajería rápida y segura' },
   { href: '/api-channels', label: 'API de Canales', desc: 'Conecta cualquier canal' },
 ]
 
@@ -68,7 +69,7 @@ export default function Nav() {
           {/* Desktop CTA + dark mode */}
           <div className="hidden lg:flex items-center gap-3">
             <button onClick={toggle} className="w-9 h-9 rounded-lg border border-slate-200 dark:border-slate-600 flex items-center justify-center text-sm" aria-label="Cambiar tema">
-              {theme === 'dark' ? '☀️' : '🌙'}
+              {theme === 'dark' ? <Sun size={16} /> : <Moon size={16} />}
             </button>
             <Link href="/contact" className="px-4 py-2.5 rounded-xl text-sm font-semibold border border-slate-200 dark:border-slate-600 text-slate-700 dark:text-slate-200 hover:border-wz-primary hover:text-wz-primary transition">Iniciar sesión</Link>
             <Link href="/pricing" className="px-4 py-2.5 rounded-xl text-sm font-semibold wz-gradient text-white shadow-lg shadow-indigo-500/30 hover:shadow-indigo-500/50 transition">Prueba gratis</Link>
@@ -77,7 +78,7 @@ export default function Nav() {
           {/* Mobile toggle */}
           <div className="flex lg:hidden items-center gap-2">
             <button onClick={toggle} className="w-9 h-9 rounded-lg border border-slate-200 dark:border-slate-600 flex items-center justify-center text-sm" aria-label="Cambiar tema">
-              {theme === 'dark' ? '☀️' : '🌙'}
+              {theme === 'dark' ? <Sun size={16} /> : <Moon size={16} />}
             </button>
             <button onClick={() => setOpen(!open)} className="w-9 h-9 rounded-lg border border-slate-200 dark:border-slate-600 flex items-center justify-center text-lg" aria-label="Menú" aria-expanded={open}>
               {open ? '✕' : '☰'}
